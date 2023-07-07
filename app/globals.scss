@@ -1,9 +1,60 @@
 @import "colors";
+@import "button";
+@import "banner";
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: $base-color;
+  background-color: $bg-color;
+}
+h1 {
+  font-size: 96px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+
+.nav_wrapper {
+  margin-bottom: 120px;
+  .nav_wrapper_inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+    align-items: center;
+  }
+  .menu_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu_list {
+      ul {
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            padding: 0 40px;
+            transition: all 1s;
+            cursor: pointer;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,46 @@
+.myBtn {
+  border-radius: 28px;
+  padding: 13px 37px;
+  border-radius: 28px;
+  border: none;
+  transition: all 1s;
+}
+.myBtn-primary {
+  background-color: transparent;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+
+  &:hover {
+    background-color: #bcf266;
+    color: rgba(30, 42, 55, 1);
+  }
+}
+
+.myBtn-secondary {
+  color: white;
+  background: linear-gradient(to right, rgba(144, 233, 0, 1), #efe600);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+  box-shadow: 0px 1.8568079471588135px 6.6120476722717285px 0px rgba(144, 233, 0, 0.03),
+    0px 5.133836269378662px 18.281465530395508px 0px rgba(144, 233, 0, 0.05), 0px 12.360300064086914px 44.01472473144531px 0px rgba(144, 233, 0, 0.07),
+    0px 41px 146px 0px rgba(144, 233, 0, 0.1);
+  color: rgba(30, 42, 55, 1);
+  font-weight: 500;
+  animation: bg-animation 8s linear infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 70% 120%;
+  }
+  99% {
+    background-position: 0% 200%;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
