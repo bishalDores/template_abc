@@ -1,5 +1,7 @@
 "use client";
+import BannerImage from "@/components/BannerImage";
 import Button from "@/components/Button";
+import Partners from "@/components/Partners";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Home() {
@@ -26,6 +28,8 @@ export default function Home() {
                 <Button title="Our Services" btnLink="btn" btnType="primary" />
                 <Button title="Work With Us" btnLink="btn" btnType="secondary" />
               </div>
+              <BannerImage />
+              <Partners />
             </Col>
           </Row>
         </Container>

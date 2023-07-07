@@ -58,3 +58,18 @@ h4 {
     }
   }
 }
+.bannerImg_wrapper {
+  width: 900px;
+  height: 430px;
+  position: relative;
+  // margin: auto;
+  perspective: 10em;
+  transition: all 1.5s ease-in-out;
+  img {
+    width: 100%;
+    transition: all 1.5s ease-in-out;
+  }
+}
+.partners_wrapper {
+  height: 150vh;
+}
